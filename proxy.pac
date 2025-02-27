@@ -9,7 +9,6 @@ function FindProxyForURL(url, host) {
         return "DIRECT";
     }
     
-    
     // Use proxy for all other traffic
     return "PROXY 172.20.2.4:8080";
 }
