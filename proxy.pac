@@ -4,7 +4,8 @@ function FindProxyForURL(url, host) {
         shExpMatch(host, "*.local") || 
         isInNet(host, "192.168.1.0", "255.255.255.0") || 
         isInNet(host, "172.20.0.0", "255.255.0.0") || 
-        shExpMatch(host, "*.jumpcloud.com")) {
+        shExpMatch(host, "*.jumpcloud.com") || 
+        shExpMatch(host, "*.githubusercontent.com")) {
         return "DIRECT";
     }
     
