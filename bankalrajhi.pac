@@ -14,7 +14,7 @@ function FindProxyForURL(url, host) {
 			return "DIRECT"; 
 
 		/* Bypass SAML, e.g. Okta */ 
-		if (shExpMatch(host, "*.okta.com") || shExpMatch(host, "*.oktacdn.com")  || shExpMatch(host, "*.microsoftonline.com")  || shExpMatch(host, "*.msftauth.net")  || shExpMatch(host, "*.msauth.net")  || shExpMatch(host, "*.windowsazure.com")  || shExpMatch(host, "*.microsoftazuread-sso.com")  || shExpMatch(host, "*.login.microsoftonline.com")  || shExpMatch(host, "*.mysignins.microsoft.com")  || shExpMatch(host, "*.auth.microsoft.com")) 
+		if (shExpMatch(host, "*.okta.com") || shExpMatch(host, "*.sa.apps.paloaltonetworks.com")  || shExpMatch(host, "*.microsoftonline.com")  || shExpMatch(host, "*.msftauth.net")  || shExpMatch(host, "*.msauth.net")  || shExpMatch(host, "*.windowsazure.com")  || shExpMatch(host, "*.microsoftazuread-sso.com")  || shExpMatch(host, "*.login.microsoftonline.com")  || shExpMatch(host, "*.mysignins.microsoft.com")  || shExpMatch(host, "*.auth.microsoft.com")) 
 			return "DIRECT"; 
 
 			/* Bypass ACS */ 
